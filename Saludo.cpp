@@ -1,20 +1,20 @@
-#include <string>
+#include <stdio.h>
 #include <iostream>
 #include <stdlib.h>
+#include <string>
 
 using namespace std;
 
 class Saludo{
 private:
-    string nombre;
+    string mensaje;
     
 public:
-    void preguntarNombre(){
-        cout<<"Cual es tu nombre?"<<endl;
-        cin>>nombre;
+    void crearMensaje(void){
+        mensaje="Hola mundo\nMiau.";
     }
     
-    void saludar(){
-        cout<<"Hola "<<nombre<<".\nHola mundo."<<endl;
+    string darMensaje(void){
+        return mensaje;
     }
 };
