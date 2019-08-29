@@ -1,9 +1,9 @@
-#include "Saludo.cpp"
+#include "Pantalla.cpp"
 
-int main(void){
-    Saludo *saludo;
-    saludo = new Saludo();
-    saludo->preguntarNombre();
-    saludo->saludar();
+int main(void) {
+    Pantalla *saludo;
+    saludo = new Pantalla();
+    saludo->imprimir();
     return 0;
 }
+
